@@ -1,0 +1,43 @@
+.lista-clientes{
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+.lista-clientes li{
+    background-color: rgb(201, 67, 89);
+    margin:10px;
+    margin-left: 0px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: background-color 1s;
+}
+
+.lista-clientes li:hover{
+    background-color:rgb(226, 147, 160);
+}
+
+.botao-excluir{
+    float: right;
+    background-color: red;
+    padding: 5px;
+    margin-top: -32px;
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    text-align: center;
+    transition: background-color 1s;
+}
+
+.botao-excluir:hover{
+    background-color: rgb(0, 60, 255);
+}
+
+.botao-editar{
+    display: block;
+    width: calc(100% -30px);
+    height: 35px;
+    line-height: 35px;
+    margin-left: 10px;
+}

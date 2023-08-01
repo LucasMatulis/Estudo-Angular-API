@@ -1,0 +1,22 @@
+<div>
+    <h2>Gerenciamento de clientes</h2>
+
+    <ul class="menu">
+        <li (click)="novoCliente()">Novo Cliente</li>
+    </ul>
+
+    <ul class="lista-clientes">
+        <li *ngFor="let cliente of clientes" (click)="selecionarCliente(cliente)">
+            <span class="botao-editar">{{cliente.nome}} - {{cliente.cpf}}</span>
+            <span class="botao-excluir" (click)="excluir(cliente)">X</span>
+        </li>
+    </ul>
+
+    <div *ngIf="clienteEdicao!=undefined">
+        <h3>Inserir/Editar</h3>
+        <input placeholder="Nome" [(ngModel)]="clienteEdicao.nome"> <br>
+        <input placeholder="CPF" [(ngModel)]="clienteEdicao.cpf"> <br>
+        <button (click)="cancelar()">Cancelar</button>
+        <button (click)="salvar()">Salvar</button>
+    </div>
+</div>
