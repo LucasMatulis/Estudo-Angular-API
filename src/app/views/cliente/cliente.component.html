@@ -7,7 +7,7 @@
 
     <ul class="lista-clientes">
         <li *ngFor="let cliente of clientes" (click)="selecionarCliente(cliente)">
-            <span class="botao-editar">{{cliente.nome}} - {{cliente.cpf}}</span>
+            <span class="botao-editar">{{cliente.nome}} - {{cliente.cpf}} - {{cliente.id}}</span>
             <span class="botao-excluir" (click)="excluir(cliente)">X</span>
         </li>
     </ul>
